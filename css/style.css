@@ -1,0 +1,40 @@
+:root {
+  --primary-color: white;
+  --secondary-color: blue;
+  --tertiary-color: green;
+
+  --primary-accent-color: purple;
+  --secondary-accent-color: pink;
+  --tertiary-accent-color: yellow;
+
+  --br-radius: 0.5rem;
+
+  --sm-text-size: 1rem;
+  --text-size: 1.15rem;
+  --title-size: 1.875rem;
+  --subtitle-size: 1.5rem;
+  --title-weight: bold;
+
+  /*Media*/
+  --max-xs: 575.99px;
+  --min-sm: 576px;
+  --max-sm: 767.99px;
+  --min-md: 768px;
+  --min-lg: 960px;
+  --min-xl: 1200px;
+  --min-xxl: 1500px;
+}
+
+body {
+  font-size: var(--text-size);
+}
+
+.menu {
+  max-height: 80px;
+  line-height: 80px;
+  overflow: hidden;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 99;
+}
