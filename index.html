@@ -11,7 +11,7 @@
     <meta property="og:url" content="" />
     <meta property="og:image" content="" />
 
-    <link rel="manifest" href="site.webmanifest" />
+    <!-- <link rel="manifest" href="site.webmanifest" /> -->
     <link rel="apple-touch-icon" href="icon.png" />
 
     <!--
@@ -20,49 +20,70 @@
   -->
 
     <meta name="theme-color" content="#141414" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/sstyle.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
     <header class="menu">
+      <a href="/">
+        <img
+          class="hs3-logo"
+          src="/images/hs3_default_black.svg"
+          alt="logo Hakerspace Trójmiasto"
+        />
+      </a>
+      <h2>#define normalność</h1>
       <nav>
         <ul>
           <li>
-            <a href="" class="hs3-logo">
-              <img
-                src="/images/hs3_box_white.svg"
-                alt="logo Hakerspace Trójmiasto"
-              />
-            </a>
-          </li>
-          <li>
-            <a href="/" class="logo">#define normalność</a>
+            <a href="#hero">Strona główna</a>
           </li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section class="hero"></section>
-      <section class="about"></section>
-      <section class="speakers"></section>
-      <section class="partners"></section>
+      <section id="hero" class="hero">
+        <article class="hero-part">
+          <div class="hero-info">
+            <h4 class="website">www.define-normalnosc.hs3.pl</h4>
+            <h1 class="title">#define normalność</h1>
+            <h2 class="subtitle">konferencja o neuroróżnorodności</h2>
+            <div class="add-info">
+              <p class="data">26/03/2022</p>
+              <p class="hour">10:00-18:00</p>
+              <p class="register">online / konieczna rejestracja</p>
+            </div>
+          </div>
+          <div class="hero-img">
+            <img src="images/define_transparent_bg_2.png" alt="" />
+          </div>
+        </article>
+      </section>
+       <section id="about" class="about">
+        <div class="about-bg">
+          <h2>Konferencja #define Normalność </h2>  
+          <p>poświęcona jest tematom
+            neuroróżnorodności, autyzmowi, ADHD, ADD, oraz zdrowiu psychicznemu z
+            naciskiem na sektor IT.
+          </p>
+      
+        </div>
+       </section>
+       <!--
+      <section id="organisers" class="organisers"></section>
+      <section id="schedule" class="schedule"></section>
+      <section id="speakers" class="speakers"></section>
+      <section id="partners" class="partners"></section> -->
     </main>
-    <footer></footer>
-    <img
-      src="define_normalnosc.png"
-      style="display: block; margin-left: auto; margin-right: auto; width: 75%"
-    />
-    <div>
-      <p>
-        Konferencja #define Normalność poświęcona jest tematom
-        neuroróżnorodności, autyzmowi, ADHD, ADD, oraz zdrowiu psychicznemu z
-        naciskiem na sektor IT.
-      </p>
-      <p>
-        26 marca 2022 w godzinach 10:00-18:00, online. Konieczna rejestracja!
-      </p>
-    </div>
+    <footer>Hackerspace Trójmiasto</footer>
   </body>
 </html>
