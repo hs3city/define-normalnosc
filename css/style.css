@@ -376,7 +376,7 @@ footer {
     max-width: 400px;
     width: 100%;
   }
-  li {
+  .schedule li {
     flex-direction: column;
   }
 }
