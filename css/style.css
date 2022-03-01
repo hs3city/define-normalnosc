@@ -9,7 +9,8 @@
   --tertiary-accent-color: #ffff61;
   --dark-purple-color: #2d39ff;
 
-  --text-color: black;
+  --title-color: black;
+  --text-color: #313030;
   --bg-color: black;
 
   --br-radius: 0.5rem;
@@ -40,6 +41,7 @@ body {
   font-size: var(--regular-text-size);
   font-family: var(--font-main);
   max-width: 1440px;
+  color: var(--text-color);
 }
 /* * {
   outline: 1px solid red;
@@ -72,11 +74,11 @@ nav {
   padding-right: 1rem;
 }
 
-ul {
+nav ul {
   display: flex;
   flex-direction: column;
   padding: 0 1rem;
-  font-size: var(--sm-text-size);
+  font-size: var(--text-size);
 }
 a {
   text-decoration: none;
@@ -155,12 +157,14 @@ article {
   font-size: var(--sm-text-size);
   letter-spacing: 0.5px;
   font-weight: 600;
+  color: var(--title-color);
 }
 .title {
   font-family: var(--font-title);
   font-size: var(--title-size);
   line-height: 0.85;
   letter-spacing: 5px;
+  color: var(--title-color);
 }
 
 .subtitle {
@@ -198,12 +202,11 @@ article {
 
 .lead-info {
   flex-basis: 400px;
-
   height: fit-content;
   background-color: var(--light-secondary-color);
   display: flex;
   justify-content: center;
-  align-items: left;
+  align-items: flex-start;
   padding: 2.5rem 5%;
 }
 
@@ -221,8 +224,21 @@ article {
   line-height: 2;
   font-size: var(--regular-text-size);
 }
+
 .mission__list {
   padding-left: 1.5rem;
+  font-weight: 500;
+}
+.mission__list > * {
+  font-size: var(--regular-text-size);
+}
+.mission__list li ul {
+  padding-left: 1rem;
+}
+
+.mission > .second-subtitle {
+  margin: 0;
+  margin-bottom: 2rem;
 }
 
 /* schedule */
@@ -294,7 +310,7 @@ article {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
+  align-items: flex-start;
   margin-left: 3rem;
 }
 .schedule__speaker {
@@ -378,5 +394,15 @@ footer {
   }
   .schedule li {
     flex-direction: column;
+    margin: 0.75rem 0;
+  }
+  .schedule__info {
+    margin-left: 0;
+  }
+  .schedule li::before {
+    justify-content: center;
+    /* width: 100%; */
+    margin-right: 0;
+    margin: 0 auto;
   }
 }
