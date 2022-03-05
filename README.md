@@ -10,6 +10,7 @@ Organizatorzy: [Hackerspace Trójmiasto](https://hs3.pl)
 - [Jacek Ambrosiewicz](https://noizz.pl/not-just-a-mood/autyzm-i-adhd-gdyby-nie-diagnoza-nigdy-nie-moglbym-byc-soba/fcs1pjx)
 - [AsperIT](https://asperit.org/)
 - [Karolina Magierek](https://zielony-koliber-gabinet-psychologiczny.business.site/)
-- [Traq]()
+- Ola Rodzewicz 
+- Szymon Moliński
 
 Po części wykładowej [Open Space](https://www.openspace.pl/metoda)
