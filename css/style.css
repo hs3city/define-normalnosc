@@ -43,6 +43,9 @@ body {
   max-width: 1440px;
   color: var(--text-color);
 }
+html {
+  scroll-behavior: smooths;
+}
 /* * {
   outline: 1px solid red;
 } */
@@ -66,11 +69,13 @@ body,
   padding: 0 1rem;
   z-index: 99;
 }
+
 .nav-toggle {
   background: transparent;
   outline: transparent;
   border: transparent;
   cursor: pointer;
+  display: none;
 }
 .nav-toggle:hover,
 .nav-toggle:active,
@@ -416,11 +421,9 @@ article {
 }
 
 article.speaker {
-  margin: 2rem 5%;
+  margin: 2rem auto;
   max-width: 400px;
-  /* min-width: 300px; */
   width: 100%;
-
   justify-content: space-between;
   padding-right: 1.5rem;
   padding-bottom: 1.5rem;
@@ -489,7 +492,7 @@ article.speaker {
   max-width: 1100px;
   display: grid;
   grid-template-columns: 10rem 1fr;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
   grid-template-areas:
     'img about'
     '. text';
@@ -600,12 +603,16 @@ article.speaker {
 
 footer {
   display: flex;
+  flex-direction: column;
   width: 100%;
   align-items: center;
-  height: 80px;
-  padding: 0 1rem;
+  height: max-content;
+  padding: 1rem 2rem 2rem;
   justify-content: center;
   background-color: var(--secondary-color);
+}
+.sm-logo {
+  padding: 1rem;
 }
 
 /* media queries */
@@ -617,6 +624,21 @@ footer {
     --title-size: 4.5rem;
     --subtitle-size: 1.5rem;
     --small-title-size: 3.75rem;
+  }
+  .menu-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+  }
+  .nav-toggle {
+    display: block;
+    position: absolute;
+    right: 0;
+  }
+  .nav-list {
+    display: none;
   }
   .subtitle {
     width: min-content;
@@ -654,6 +676,7 @@ footer {
     height: min-content;
     padding: 5%;
   }
+
   .nav-list {
     flex-direction: column;
   }

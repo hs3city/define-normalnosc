@@ -27,16 +27,21 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/feather-icons"></script>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
     <header class="menu">
-      <a href="/">
-        <h2 class="color-text">#define normalność</h2>
-      </a>
-      <button class="nav-toggle"></button>
+      <div class="menu-row">
+        <a href="/">
+          <h2 class="color-text">#define normalność</h2>
+        </a>
+        <button class="nav-toggle">
+          <img src="images/icons/menu.svg" />
+        </button>
+      </div>
 
       <nav>
         <ul class="nav-list">
@@ -177,58 +182,58 @@
                 <h5 class="schedule__title"></h5>
               </div>
             </li>
-            <h3 class="second-subtitle">Przerwa godz.13:00 - 14:00</h3>
-            <h3 class="second-subtitle">Open Space godz. 14:00 - 18:00</h3>
-            <div class="schedule__info">
-              <h4 class="schedule__speaker">Prowadzenie Fundacja Do</h4>
-              <article class="description">
-                <p class="text">
-                  Podczas wydarzenia przewidzieliśmy również przestrzeń na
-                  spotkania w technologii Open Space. Każdy uczestnik może
-                  zgłosić temat dyskusji, a inni mogą się do niego przyłączyć.
-                  Spotkamy się w małych grupach i będziemy mogli przedyskutować
-                  ważne dla nas tematy. Do grup Open Space’owych mogą dołączyć
-                  również prelegenci.
-                </p>
-                <p class="text">
-                  Open Space podczas naszej Konferencji to przestrzeń otwarta na
-                  wszystko, co dla Ciebie ważne.
-                </p>
-                <p class="text">
-                  Masz pomysł? Pytanie? Propozycję rozwiązania jakiegoś
-                  problemu? Doświadczenie, którym chcesz się podzielić? A może
-                  po prostu chcesz posłuchać, co inni mają do powiedzenia?
-                </p>
-                <p class="text">
-                  Nic prostszego - zgłoś swój temat, wybierz czas i miejsce i
-                  zaproś innych do spotkania :-)
-                </p>
-                <p class="text">
-                  Jak tylko poczujesz, że woła Cię temat zgłoszony przez kogoś
-                  innego - dołącz do rozmowy.
-                </p>
-                <p class="text">Notuj.</p>
-                <p class="text">
-                  W prezencie dla Ciebie i pozostałych uczestników udostępnimy
-                  kompletną dokumentację z tego Wydarzenia.
-                </p>
-                <p class="text">
-                  Zobacz krótki film i dowiedz się więcej o metodzie Open Space:
-                </p>
-                <div class="video">
-                  <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/P8tpkQJQ9AY"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
-                </div>
-              </article>
-            </div>
           </ol>
+          <h3 class="second-subtitle">Przerwa godz.13:00 - 14:00</h3>
+          <h3 class="second-subtitle">Open Space godz. 14:00 - 18:00</h3>
+          <div class="schedule__info">
+            <h4 class="schedule__speaker">Prowadzenie Fundacja Do</h4>
+            <div class="description">
+              <p class="text">
+                Podczas wydarzenia przewidzieliśmy również przestrzeń na
+                spotkania w technologii Open Space. Każdy uczestnik może zgłosić
+                temat dyskusji, a inni mogą się do niego przyłączyć. Spotkamy
+                się w małych grupach i będziemy mogli przedyskutować ważne dla
+                nas tematy. Do grup Open Space’owych mogą dołączyć również
+                prelegenci.
+              </p>
+              <p class="text">
+                Open Space podczas naszej Konferencji to przestrzeń otwarta na
+                wszystko, co dla Ciebie ważne.
+              </p>
+              <p class="text">
+                Masz pomysł? Pytanie? Propozycję rozwiązania jakiegoś problemu?
+                Doświadczenie, którym chcesz się podzielić? A może po prostu
+                chcesz posłuchać, co inni mają do powiedzenia?
+              </p>
+              <p class="text">
+                Nic prostszego - zgłoś swój temat, wybierz czas i miejsce i
+                zaproś innych do spotkania :-)
+              </p>
+              <p class="text">
+                Jak tylko poczujesz, że woła Cię temat zgłoszony przez kogoś
+                innego - dołącz do rozmowy.
+              </p>
+              <p class="text">Notuj.</p>
+              <p class="text">
+                W prezencie dla Ciebie i pozostałych uczestników udostępnimy
+                kompletną dokumentację z tego Wydarzenia.
+              </p>
+              <p class="text">
+                Zobacz krótki film i dowiedz się więcej o metodzie Open Space:
+              </p>
+              <div class="video">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/P8tpkQJQ9AY"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
         </article>
       </section>
       <section id="speakers" class="speakers">
@@ -374,7 +379,7 @@
             </div>
             <div class="logo-next">
               <img
-                src="images/logos/PODSTAWOWA codeme_logo_black_red_subtitle_black_rgb.png"
+                src="images/logos/PODSTAWOWA_codeme_logo_black_red_subtitle_black_rgb.png"
                 alt=""
               />
             </div>
@@ -391,7 +396,32 @@
         src="/images/hs3_default_black.svg"
         alt="logo Hakerspace Trójmiasto"
       />
-      <i class="fa-brands fa-twitter"></i>
+      <div class="social-media">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          class="sm-logo"
+          href="https://twitter.com/hs3city"
+          ><img src="images/icons/twitter.svg" alt="twitter logo"
+        /></a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          class="sm-logo"
+          href="https://www.linkedin.com/company/hackerspace-tr%C3%B3jmiasto/"
+          ><img src="images/icons/linkedin.svg" alt="twitter logo"
+        /></a>
+        <a
+          href="https://www.facebook.com/hackerspacetrojmiasto"
+          class="sm-logo"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="images/icons/facebook.svg" />
+        </a>
+      </div>
     </footer>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
