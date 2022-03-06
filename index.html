@@ -34,26 +34,27 @@
 
   <body>
     <header class="menu">
-      <div class="menu-row">
-        <a href="/">
-          <h2 class="color-text">#define normalność</h2>
-        </a>
-        <button class="nav-toggle">
-          <img src="images/icons/menu.svg" />
-        </button>
-      </div>
+      <a href="/" class="brand">
+        <h2 class="color-text">#define normalność</h2>
+      </a>
 
-      <nav>
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a href="#hero">Strona główna</a>
-          </li>
-          <li class="nav-item"><a href="#about">Misja</a></li>
-          <li class="nav-item"><a href="#schedule">Harmonogram</a></li>
-          <li class="nav-item"><a href="#speakers">Prelegenci</a></li>
-          <li class="nav-item"><a href="#partners">Partnerzy</a></li>
-        </ul>
-      </nav>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#hero" class="link">Strona główna</a>
+        </li>
+        <li class="nav-item"><a href="#about" class="link">Misja</a></li>
+        <li class="nav-item">
+          <a href="#schedule" class="link">Harmonogram</a>
+        </li>
+        <li class="nav-item">
+          <a href="#speakers" class="link">Prelegenci</a>
+        </li>
+        <li class="nav-item"><a href="#partners" class="link">Partnerzy</a></li>
+      </ul>
+
+      <button class="nav-toggle">
+        <img src="images/icons/menu.svg" alt="menu-icon" />
+      </button>
     </header>
 
     <main>
@@ -69,7 +70,10 @@
           </div>
         </article>
         <article class="hero-img">
-          <img src="images/define_transparent_bg_2.png" alt="" />
+          <img
+            src="images/define_transparent_bg_2.png"
+            alt="define normalność - logo przedstawiające głowę kobiety "
+          />
         </article>
       </section>
       <section class="cta">
@@ -247,7 +251,7 @@
                 <div class="img-wrapper">
                   <img
                     src="./images/speakers/sabina.jpg"
-                    alt=""
+                    alt="prelegent: Sabina Markowska"
                     class="speaker-image"
                   />
                 </div>
@@ -272,7 +276,7 @@
                 <div class="img-wrapper">
                   <img
                     src="./images/speakers/ida.jpg"
-                    alt=""
+                    alt="prelegent: Ida Tymina"
                     class="speaker-image"
                   />
                 </div>
@@ -297,7 +301,7 @@
                 <div class="img-wrapper">
                   <img
                     src="./images/speakers/tomasz2.jpg"
-                    alt=""
+                    alt="prelegent: Tomasz Jasiński"
                     class="speaker-image"
                   />
                 </div>
@@ -367,24 +371,41 @@
 
           <div class="first-row">
             <div class="logo-main">
-              <img src="images/logos/asper_it_pion_blue1.png" alt="" />
+              <img
+                src="images/logos/asper_it_pion_blue1.png"
+                alt="logo AsperIT"
+                title="AsperIT"
+              />
             </div>
             <div class="logo-main">
-              <img src="images/logos/define_transparent_bg_2.png" alt="" />
+              <img
+                src="images/logos/define_transparent_bg_2.png"
+                alt="logo Neuroatypowe"
+                title="Neuroatypowe"
+              />
             </div>
           </div>
           <div class="second-row">
             <div class="logo-next">
-              <img src="images/logos/hs-biale-tlo.jpeg" alt="" />
+              <img
+                src="images/logos/hs-biale-tlo.jpeg"
+                alt="logo Hybrydowa Szkoła"
+                title="Hybrydowa Szkoła"
+              />
             </div>
             <div class="logo-next">
               <img
                 src="images/logos/PODSTAWOWA_codeme_logo_black_red_subtitle_black_rgb.png"
-                alt=""
+                alt="logo CODE:ME"
+                title="CODE:ME"
               />
             </div>
             <div class="logo-next">
-              <img src="images/hs3_default_black.svg" alt="" />
+              <img
+                src="images/hs3_default_black.svg"
+                alt="logo Hackerspace Trójmiasto"
+                title="Hackerspace Trójmiasto"
+              />
             </div>
           </div>
         </article>
@@ -393,8 +414,9 @@
     <footer>
       <img
         class="hs3-logo"
-        src="/images/hs3_default_black.svg"
+        src="images/hs3_box_white.svg"
         alt="logo Hakerspace Trójmiasto"
+        title="Hackerspace Trójmiasto"
       />
       <div class="social-media">
         <a
@@ -409,7 +431,7 @@
           rel="noopener noreferrer"
           class="sm-logo"
           href="https://www.linkedin.com/company/hackerspace-tr%C3%B3jmiasto/"
-          ><img src="images/icons/linkedin.svg" alt="twitter logo"
+          ><img src="images/icons/linkedin.svg" alt="linkedin logo"
         /></a>
         <a
           href="https://www.facebook.com/hackerspacetrojmiasto"
@@ -417,7 +439,7 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="images/icons/facebook.svg" />
+          <img src="images/icons/facebook.svg" alt="facebook logo" />
         </a>
       </div>
     </footer>
