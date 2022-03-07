@@ -373,7 +373,7 @@ article {
   display: grid;
   grid-template-columns: 10rem 1fr;
   grid-template-rows: auto;
-  margin: 2rem 0;
+  margin: 1.5rem 0;
 }
 .schedule li::before {
   margin-right: 3rem;
@@ -395,7 +395,6 @@ article {
   height: 7rem;
   text-align: center;
   display: flex;
-  /* justify-content: left; */
   justify-content: center;
   align-items: center;
 }
