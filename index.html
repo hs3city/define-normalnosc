@@ -40,7 +40,12 @@
 
       <ul class="nav-list">
         <li class="nav-item">
-          <a href="#hero" class="link">Strona główna</a>
+          <a href="#hero" class="link"
+            ><img
+              src="./images/icons/home.svg"
+              alt="ikona dom"
+              title="Strona główna"
+          /></a>
         </li>
         <li class="nav-item"><a href="#about" class="link">Misja</a></li>
         <li class="nav-item">
@@ -50,6 +55,13 @@
           <a href="#speakers" class="link">Prelegenci</a>
         </li>
         <li class="nav-item"><a href="#partners" class="link">Partnerzy</a></li>
+        <li class="nav-item">
+          <a
+            href="https://app.evenea.pl/event/definenormalnosc/"
+            class="link cta-link"
+            >Zapisz się!</a
+          >
+        </li>
       </ul>
 
       <button class="nav-toggle">
@@ -83,49 +95,72 @@
           src="/images/hs3_default_black.svg"
           alt="logo Hakerspace Trójmiasto"
         />
-        <button>Zapisz się</button>
+
+        <a
+          href="https://app.evenea.pl/event/definenormalnosc/"
+          target="_blank"
+          class="cta-link"
+          >Zapisz się</a
+        >
+        <p class="cta-text">Zapisy do 25 marca do godziny 20:00.</p>
+        <p class="cta-text strong">Liczba miejsc ograniczona!</p>
       </section>
       <section id="about" class="about">
         <article class="lead-info">
-          <h2>Konferencja</h2>
-          <h2 class="color-text">#define normalność</h2>
           <p>
-            poświęcona jest tematom neuroróżnorodności, autyzmowi, ADHD, ADD,
-            oraz zdrowiu psychicznemu z naciskiem na sektor IT.
+            <span class="color-text">Neuroróżnorodność</span> <br />
+            to perspektywa patrzenia na ludzkie umysły, która zakłada, że nie ma
+            jednego "normalnego" umysłu, ale każdy człowiek ma unikalny układ
+            nerwowy z unikalną kombinacją zdolności i potrzeb. To między innymi:
+            ADHD, spektrum autyzmu w tym zespół Aspergera, dysleksja,
+            dyspraksja, dyskalkulia, zespół Tourette’a, wysokowrażliwość.
           </p>
         </article>
         <article class="mission">
-          <h2 class="second-subtitle">Naszą misją jest:</h2>
-          <ol class="mission__list">
-            <li>
-              Zwiększenie świadomości o neuroróżnorodności.
-              <ul>
-                <li>Ogólnie wśród społeczeństwa</li>
-                <li>
-                  Wśród naszej społeczności ( osoby, które często czują inaczej
-                  / mam tak samo)
-                </li>
-                <li>
-                  Wśród osób neurotypowych, które żyją (partner, kolega,
-                  przyjaciel) lub pracują z osobą neuroróżnorodną
-                </li>
-                <li>
-                  Wśród rodziców (opiekunów prawnych) dzieci, które są
-                  zdiagnozowane lub są w trakcie diagnozy. Pomoc państwa kończy
-                  się po zakończeniu formalnej edukacji przez dziecko. Często
-                  rodzice zastanawiają się, martwią jak jego dzieci sobie
-                  poradzą w dorosłym życiu.
-                </li>
-              </ul>
-            </li>
-            <li>
-              Promocja organizacji robiących dobre rzeczy np. -
-              https://www.domrainmana.pl/
-            </li>
-            <li>
-              Pokazanie co IT może zrobić dobrego dla osób neuroróżnorodnych
-            </li>
-          </ol>
+          <h2 class="second-subtitle">Nasza misja:</h2>
+          <p>
+            Organizujemy konferencję o neuroróżnorodności, bo znajomość tematu
+            wśród społeczeństwa jest mała lub bliska zeru. Chcemy nie tylko
+            zwiększyć świadomość, ale też zaprosić do dyskusji na tematy, które
+            są dla Ciebie ważne. Dlatego konferencja będzie podzielona na dwa
+            bloki: część wykładowa i Open Space, gdzie agendę spotkania tworzą
+            sami uczestnicy.
+          </p>
+        </article>
+        <article class="mission">
+          <h2 class="second-subtitle">Dla kogo?</h2>
+          <h3>Konferencja jest skierowana do:</h3>
+          <div class="lists-wrapper">
+            <ul class="mission__list">
+              <li>Dorosłych zainteresowanych tematem</li>
+              <li>Osób, które czują inaczej i zastanawiają się nad diagnozą</li>
+              <li>
+                Osób, które żyją lub pracują z osobą neuroróżnorodną (partner,
+                rodzeństwo, kolega, przyjaciel, pracownik, szef)
+              </li>
+              <li>
+                Rodziców i opiekunów dzieci, które są zdiagnozowane lub w
+                trakcie diagnozy i zastanawiają się jak poradzą sobie ich
+                podopieczni w dorosłym życiu
+              </li>
+            </ul>
+            <ul class="mission__list">
+              <li>
+                Specjalistów: terapeutów, psychologów, nauczycieli, naukowców,
+                którzy chcą zwiększyć swoją wiedzę lub podzielić się swoim
+                doświadczeniem
+              </li>
+              <li>
+                Organizacji, które działają w obszarze neuroróżnorodności i
+                robią dobre rzeczy
+              </li>
+              <li>
+                Osób ze środowiska IT, żeby pokazać jak można wspomóc
+                wykorzystując swoje umiejętności poprzez udzielanie się w
+                projektach open source.
+              </li>
+            </ul>
+          </div>
         </article>
       </section>
       <section id="schedule" class="schedule">
@@ -150,7 +185,7 @@
             </li>
             <li>
               <div class="schedule__info">
-                <h4 class="schedule__speaker">AsperIT: Tomasz Jasiński</h4>
+                <h4 class="schedule__speaker">asperIT: Tomasz Jasiński</h4>
                 <h5 class="schedule__title">
                   #NEURODIVERSITY czyli jak firmy w Polsce budują
                   neurozdywersyfikowane zespoły
@@ -161,7 +196,8 @@
               <div class="schedule__info">
                 <h4 class="schedule__speaker">Szymon Moliński</h4>
                 <h5 class="schedule__title">
-                  Czy autyzm ma związek z Geografią ...?
+                  Nie wyciągaj wniosków zbyt szybko, czyli o spektrum autyzmu w
+                  kontekście geografii
                 </h5>
               </div>
             </li>
@@ -187,7 +223,7 @@
               </div>
             </li>
           </ol>
-          <h3 class="second-subtitle">Przerwa godz.13:00 - 14:00</h3>
+          <h3 class="second-subtitle">Przerwa godz. 13:00 - 14:00</h3>
           <h3 class="second-subtitle">Open Space godz. 14:00 - 18:00</h3>
           <div class="schedule__info">
             <h4 class="schedule__speaker">Prowadzenie Fundacja Do</h4>
@@ -325,7 +361,7 @@
                 <div class="img-wrapper">
                   <img
                     src="./images/speakers/Ola_small.jpg"
-                    alt=""
+                    alt="prelegent: Ola Rodzewicz"
                     class="speaker-image"
                   />
                 </div>
@@ -342,6 +378,84 @@
                 dyplomowana.
               </p>
               <a href="prelegenci/ola-rodzewicz.html" class="more"
+                >Czytaj więcej</a
+              >
+            </article>
+            <!-- speaker -->
+            <article class="speaker">
+              <div class="speaker-row">
+                <div class="img-wrapper">
+                  <img
+                    src="images/speakers/szymonmolinski.png"
+                    alt="prelegent: Szymon Moliński"
+                    class="speaker-image"
+                  />
+                </div>
+
+                <div class="speaker-about">
+                  <h3 class="subtitle">Szymon Moliński</h3>
+                </div>
+              </div>
+
+              <p class="speaker-info">
+                Data Scientist w Digitree Group S.A. Zawodowo zajmuje się
+                szeroko pojętym Data Science dla sektora e-commerce, po
+                godzinach rozwiązuje problemy modelowania danych pw czasie i
+                przestrzeni, przede wszystkim w kontekście zdrowia publicznego.
+              </p>
+              <a href="prelegenci/szymon-molinski.html" class="more"
+                >Czytaj więcej</a
+              >
+            </article>
+            <!-- speaker -->
+            <article class="speaker">
+              <div class="speaker-row">
+                <div class="img-wrapper">
+                  <img
+                    src="images/speakers/michal_i-wojciech.jpg"
+                    alt="prelegent: Michał Szpor"
+                    class="speaker-image"
+                  />
+                </div>
+
+                <div class="speaker-about">
+                  <h3 class="subtitle">Michał Szpor</h3>
+                </div>
+              </div>
+
+              <p class="speaker-info">
+                Certyfikowany trener biznesu, MindMapingu, konsultant,
+                facylitator Open Space Technology (OST). Współzałożyciel
+                Fundacji DO. Specjalizuje się w szkoleniu i wdrażaniu narzędzi
+                Lean ukierunkowanych na konkretne rezultaty.
+              </p>
+              <a href="prelegenci/michal-szpor.html" class="more"
+                >Czytaj więcej</a
+              >
+            </article>
+            <!--speaker-->
+            <article class="speaker">
+              <div class="speaker-row">
+                <div class="img-wrapper">
+                  <img
+                    src="images/speakers/michal_i-wojciech.jpg"
+                    alt="prelegent: Wojciech Zawisz"
+                    class="speaker-image"
+                  />
+                </div>
+
+                <div class="speaker-about">
+                  <h3 class="subtitle">Wojciech Zawisz</h3>
+                </div>
+              </div>
+
+              <p class="speaker-info">
+                Trener, konsultant i coach, akredytowany konsultant Insights
+                Discovery ™, coach z akredytacją International Coach Federation,
+                facilitator metody Open Space Technology (OST). Współzałożyciel
+                Fundacji DO.
+              </p>
+              <a href="prelegenci/wojciech-zawisz.html" class="more"
                 >Czytaj więcej</a
               >
             </article>
@@ -373,8 +487,8 @@
             <div class="logo-main">
               <img
                 src="images/logos/asper_it_pion_blue1.png"
-                alt="logo AsperIT"
-                title="AsperIT"
+                alt="logo asperIT"
+                title="asperIT"
               />
             </div>
             <div class="logo-main">
@@ -388,7 +502,14 @@
           <div class="second-row">
             <div class="logo-next">
               <img
-                src="images/logos/hs-biale-tlo.jpeg"
+                src="images/logos/hs-biale-tlo_1.jpeg"
+                alt="logo Hybrydowa Szkoła"
+                title="Hybrydowa Szkoła"
+              />
+            </div>
+            <div class="logo-next">
+              <img
+                src="images/logos/fundo_1.png"
                 alt="logo Hybrydowa Szkoła"
                 title="Hybrydowa Szkoła"
               />
