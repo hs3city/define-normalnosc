@@ -27,28 +27,34 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/feather-icons"></script>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
     <header class="menu">
-      <a href="/">
+      <a href="/" class="brand">
         <h2 class="color-text">#define normalność</h2>
-        <!-- <img
-          class="hs3-logo"
-          src="/images/hs3_default_black.svg"
-          alt="logo Hakerspace Trójmiasto"
-        /> -->
       </a>
 
-      <!-- <nav>
-        <ul>
-          <li>
-            <a href="#hero">Strona główna</a>
-          </li>
-        </ul>
-      </nav> -->
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#hero" class="link">Strona główna</a>
+        </li>
+        <li class="nav-item"><a href="#about" class="link">Misja</a></li>
+        <li class="nav-item">
+          <a href="#schedule" class="link">Harmonogram</a>
+        </li>
+        <li class="nav-item">
+          <a href="#speakers" class="link">Prelegenci</a>
+        </li>
+        <li class="nav-item"><a href="#partners" class="link">Partnerzy</a></li>
+      </ul>
+
+      <button class="nav-toggle">
+        <img src="images/icons/menu.svg" alt="menu-icon" />
+      </button>
     </header>
 
     <main>
@@ -64,7 +70,10 @@
           </div>
         </article>
         <article class="hero-img">
-          <img src="images/define_transparent_bg_2.png" alt="" />
+          <img
+            src="images/define_transparent_bg_2.png"
+            alt="define normalność - logo przedstawiające głowę kobiety "
+          />
         </article>
       </section>
       <section class="cta">
@@ -152,7 +161,7 @@
               <div class="schedule__info">
                 <h4 class="schedule__speaker">Szymon Moliński</h4>
                 <h5 class="schedule__title">
-                  "Czy autyzm ma związek z Geografią ...?"
+                  Czy autyzm ma związek z Geografią ...?
                 </h5>
               </div>
             </li>
@@ -165,7 +174,10 @@
             <li>
               <div class="schedule__info">
                 <h4 class="schedule__speaker">Ola Rodzewicz</h4>
-                <h5 class="schedule__title"></h5>
+                <h5 class="schedule__title">
+                  Diagnoza różnicowa i ocena funkcjonalna okiem
+                  #Facetki_z_Poradni
+                </h5>
               </div>
             </li>
             <li>
@@ -174,12 +186,58 @@
                 <h5 class="schedule__title"></h5>
               </div>
             </li>
-            <h3 class="second-subtitle">Przerwa godz.13:00 - 14:00</h3>
-            <h3 class="second-subtitle">Open Space godz. 14:00 - 18:00</h3>
-            <div class="schedule__info">
-              <h4 class="schedule__speaker">Prowadzenie Fundacja Do</h4>
-            </div>
           </ol>
+          <h3 class="second-subtitle">Przerwa godz.13:00 - 14:00</h3>
+          <h3 class="second-subtitle">Open Space godz. 14:00 - 18:00</h3>
+          <div class="schedule__info">
+            <h4 class="schedule__speaker">Prowadzenie Fundacja Do</h4>
+            <div class="description">
+              <p class="text">
+                Podczas wydarzenia przewidzieliśmy również przestrzeń na
+                spotkania w technologii Open Space. Każdy uczestnik może zgłosić
+                temat dyskusji, a inni mogą się do niego przyłączyć. Spotkamy
+                się w małych grupach i będziemy mogli przedyskutować ważne dla
+                nas tematy. Do grup Open Space’owych mogą dołączyć również
+                prelegenci.
+              </p>
+              <p class="text">
+                Open Space podczas naszej Konferencji to przestrzeń otwarta na
+                wszystko, co dla Ciebie ważne.
+              </p>
+              <p class="text">
+                Masz pomysł? Pytanie? Propozycję rozwiązania jakiegoś problemu?
+                Doświadczenie, którym chcesz się podzielić? A może po prostu
+                chcesz posłuchać, co inni mają do powiedzenia?
+              </p>
+              <p class="text">
+                Nic prostszego - zgłoś swój temat, wybierz czas i miejsce i
+                zaproś innych do spotkania :-)
+              </p>
+              <p class="text">
+                Jak tylko poczujesz, że woła Cię temat zgłoszony przez kogoś
+                innego - dołącz do rozmowy.
+              </p>
+              <p class="text">Notuj.</p>
+              <p class="text">
+                W prezencie dla Ciebie i pozostałych uczestników udostępnimy
+                kompletną dokumentację z tego Wydarzenia.
+              </p>
+              <p class="text">
+                Zobacz krótki film i dowiedz się więcej o metodzie Open Space:
+              </p>
+              <div class="video">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/P8tpkQJQ9AY"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
         </article>
       </section>
       <section id="speakers" class="speakers">
@@ -187,12 +245,13 @@
           <h2 class="title">Prelegenci</h2>
 
           <div class="speakers-wrapper">
+            <!--speaker -->
             <article class="speaker">
               <div class="speaker-row">
                 <div class="img-wrapper">
                   <img
                     src="./images/speakers/sabina.jpg"
-                    alt=""
+                    alt="prelegent: Sabina Markowska"
                     class="speaker-image"
                   />
                 </div>
@@ -211,12 +270,13 @@
                 >Czytaj więcej</a
               >
             </article>
+            <!-- speaker -->
             <article class="speaker">
               <div class="speaker-row">
                 <div class="img-wrapper">
                   <img
                     src="./images/speakers/ida.jpg"
-                    alt=""
+                    alt="prelegent: Ida Tymina"
                     class="speaker-image"
                   />
                 </div>
@@ -235,12 +295,13 @@
                 >Czytaj więcej</a
               >
             </article>
+            <!-- speaker -->
             <article class="speaker">
               <div class="speaker-row">
                 <div class="img-wrapper">
                   <img
                     src="./images/speakers/tomasz2.jpg"
-                    alt=""
+                    alt="prelegent: Tomasz Jasiński"
                     class="speaker-image"
                   />
                 </div>
@@ -258,6 +319,32 @@
                 >Czytaj więcej</a
               >
             </article>
+            <!--  speaker -->
+            <article class="speaker">
+              <div class="speaker-row">
+                <div class="img-wrapper">
+                  <img
+                    src="./images/speakers/Ola_small.jpg"
+                    alt=""
+                    class="speaker-image"
+                  />
+                </div>
+
+                <div class="speaker-about">
+                  <h3 class="subtitle">Ola Rodzewicz</h3>
+                </div>
+              </div>
+
+              <p class="speaker-info">
+                Dyrektorka Poradni Psychologiczno – Pedagogicznej w Węgorzewie w
+                latach 2007 - 2021, absolwentka WSP w Bydgoszczy (logopedia)
+                oraz APS w Warszawie (tyflopedagogika), nauczycielka
+                dyplomowana.
+              </p>
+              <a href="prelegenci/ola-rodzewicz.html" class="more"
+                >Czytaj więcej</a
+              >
+            </article>
 
             <!-- new speaker -->
             <!-- <article class="speaker">
@@ -267,7 +354,7 @@
                 </div>
 
                 <div class="speaker-about">
-                  <h3 class="speaker-name"></h3>
+                  <h3 class="subtitle"></h3>
                 </div>
               </div>
 
@@ -278,18 +365,85 @@
         </article>
       </section>
 
-      <!--
-      <section id="organisers" class="organisers"></section>
-      
-      
-      <section id="partners" class="partners"></section> -->
+      <section id="partners" class="partners">
+        <article>
+          <h2 class="title">Partnerzy</h2>
+
+          <div class="first-row">
+            <div class="logo-main">
+              <img
+                src="images/logos/asper_it_pion_blue1.png"
+                alt="logo AsperIT"
+                title="AsperIT"
+              />
+            </div>
+            <div class="logo-main">
+              <img
+                src="images/logos/define_transparent_bg_2.png"
+                alt="logo Neuroatypowe"
+                title="Neuroatypowe"
+              />
+            </div>
+          </div>
+          <div class="second-row">
+            <div class="logo-next">
+              <img
+                src="images/logos/hs-biale-tlo.jpeg"
+                alt="logo Hybrydowa Szkoła"
+                title="Hybrydowa Szkoła"
+              />
+            </div>
+            <div class="logo-next">
+              <img
+                src="images/logos/PODSTAWOWA_codeme_logo_black_red_subtitle_black_rgb.png"
+                alt="logo CODE:ME"
+                title="CODE:ME"
+              />
+            </div>
+            <div class="logo-next">
+              <img
+                src="images/hs3_default_black.svg"
+                alt="logo Hackerspace Trójmiasto"
+                title="Hackerspace Trójmiasto"
+              />
+            </div>
+          </div>
+        </article>
+      </section>
     </main>
     <footer>
       <img
         class="hs3-logo"
-        src="/images/hs3_default_black.svg"
+        src="images/hs3_box_white.svg"
         alt="logo Hakerspace Trójmiasto"
+        title="Hackerspace Trójmiasto"
       />
+      <div class="social-media">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          class="sm-logo"
+          href="https://twitter.com/hs3city"
+          ><img src="images/icons/twitter.svg" alt="twitter logo"
+        /></a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          class="sm-logo"
+          href="https://www.linkedin.com/company/hackerspace-tr%C3%B3jmiasto/"
+          ><img src="images/icons/linkedin.svg" alt="linkedin logo"
+        /></a>
+        <a
+          href="https://www.facebook.com/hackerspacetrojmiasto"
+          class="sm-logo"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="images/icons/facebook.svg" alt="facebook logo" />
+        </a>
+      </div>
     </footer>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
