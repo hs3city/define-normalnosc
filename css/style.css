@@ -3,6 +3,7 @@
   --secondary-color: #32ffff;
 
   --light-secondary-color: #32ffff33;
+  --light-red: rgba(255, 109, 86, 0.2);
 
   --primary-accent-color: #a84dff;
   --secondary-accent-color: #ff6d56;
@@ -83,6 +84,7 @@ body,
   width: 70%;
   text-align: right;
   justify-content: space-between;
+  align-items: center;
 }
 
 .nav-toggle {
@@ -94,7 +96,7 @@ body,
 }
 
 .nav-item a {
-  padding: 0.35rem;
+  padding: 0.25rem;
   font-size: var(--regular-text-size);
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
@@ -104,6 +106,15 @@ body,
 .nav-item a:focus,
 .nav-item a:active {
   border: 5px solid var(--secondary-color);
+}
+.nav-item:nth-child(1) a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-item:last-child a {
+  background-color: var(--secondary-color);
+  padding: 0.35rem;
 }
 a {
   text-decoration: none;
@@ -116,8 +127,9 @@ a {
     to left,
     var(--secondary-color),
     var(--primary-accent-color),
+    var(--tertiary-accent-color),
     var(--secondary-accent-color),
-    /* var(--tertiary-accent-color), */ var(--dark-purple-color)
+    var(--dark-purple-color)
   );
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -226,7 +238,7 @@ article {
 .cta {
   flex-direction: column;
   line-height: 2;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
   max-width: 1200px;
 }
 .cta h2 {
@@ -235,9 +247,10 @@ article {
 .hs3-logo {
   width: 260px;
   margin: 2rem;
+  padding: 0.5rem;
 }
 
-.cta button {
+.cta-link {
   font-size: var(--subtitle-size);
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -247,12 +260,20 @@ article {
   outline: transparent;
   border: 13px solid var(--secondary-color);
   cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+.cta-text {
+  text-align: center;
+}
+.strong {
+  font-weight: bold;
 }
 
 /* about */
 .about {
   display: flex;
-  padding-top: 0;
+  flex-wrap: wrap;
+  padding-top: 2rem;
   max-width: 1200px;
 }
 
@@ -263,7 +284,7 @@ article {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 2.5rem 5%;
+  padding: 1.5rem 5%;
 }
 
 .lead-info h2,
@@ -280,10 +301,23 @@ article {
   line-height: 2;
   font-size: var(--regular-text-size);
 }
+.mission h3 {
+  font-weight: 600;
+}
+.lists-wrapper {
+  display: flex;
+}
 
 .mission__list {
-  padding-left: 1.5rem;
+  padding: 3.5rem;
   font-weight: 500;
+}
+.mission__list:last-child {
+  margin-left: 1rem;
+  background-color: var(--light-red);
+}
+.mission__list:first-child {
+  margin-right: 1rem;
 }
 .mission__list > * {
   font-size: var(--regular-text-size);
@@ -295,6 +329,7 @@ article {
 .mission > .second-subtitle {
   margin: 0;
   margin-bottom: 2rem;
+  padding-top: 0;
 }
 
 /* schedule */
@@ -313,10 +348,12 @@ article {
   border-bottom-width: 13px;
   border-image: radial-gradient(
       var(--secondary-color),
+      var(--tertiary-accent-color),
       var(--secondary-accent-color),
       var(--primary-accent-color),
       var(--dark-purple-color),
       var(--secondary-color),
+      var(--tertiary-accent-color),
       var(--secondary-accent-color),
       var(--primary-accent-color),
       var(--dark-purple-color)
@@ -336,7 +373,7 @@ article {
   display: grid;
   grid-template-columns: 10rem 1fr;
   grid-template-rows: auto;
-  margin: 2rem 0;
+  margin: 1.5rem 0;
 }
 .schedule li::before {
   margin-right: 3rem;
@@ -346,7 +383,7 @@ article {
     var(--secondary-color),
     var(--primary-accent-color),
     var(--secondary-accent-color),
-    /* var(--tertiary-accent-color)*/ var(--dark-purple-color)
+    var(--dark-purple-color)
   );
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -358,7 +395,6 @@ article {
   height: 7rem;
   text-align: center;
   display: flex;
-  /* justify-content: left; */
   justify-content: center;
   align-items: center;
 }
@@ -433,10 +469,12 @@ article.speaker {
   border-width: 13px;
   border-image: radial-gradient(
       var(--secondary-color),
+      var(--tertiary-accent-color),
       var(--secondary-accent-color),
       var(--primary-accent-color),
       var(--dark-purple-color),
       var(--secondary-color),
+      var(--tertiary-accent-color),
       var(--secondary-accent-color),
       var(--primary-accent-color),
       var(--dark-purple-color)
@@ -517,6 +555,9 @@ article.speaker {
   grid-row: 1/2;
   margin: 1rem 0;
 }
+.single-company {
+  font-weight: 600;
+}
 .single-about {
   grid-area: about;
   grid-column: 2/3;
@@ -549,7 +590,6 @@ article.speaker {
   padding: 5%;
   font-size: var(--regular-text-size);
   max-width: 1100px;
-  /* background-color: var(--light-secondary-color); */
   margin: 0 auto;
 }
 
@@ -566,8 +606,8 @@ article.speaker {
 
 .logo-main {
   display: block;
-  width: 200px;
-  height: 200px;
+  width: 160px;
+  height: 160px;
 }
 
 .logo-main img {
@@ -596,6 +636,7 @@ article.speaker {
   width: 100%;
   height: auto;
   object-fit: cover;
+  padding: 0.5rem;
 }
 
 /* footer */
@@ -630,7 +671,7 @@ footer .hs3-logo {
   }
 
   .menu-mobile {
-    height: 320px;
+    height: 360px;
     line-height: 40px;
     display: grid;
     justify-content: space-between;
@@ -672,6 +713,10 @@ footer .hs3-logo {
   .subtitle {
     width: min-content;
   }
+
+  .lists-wrapper {
+    flex-direction: column;
+  }
   .speakers-wrapper {
     display: flex;
     flex-direction: column;
@@ -696,8 +741,8 @@ footer .hs3-logo {
     --sm-text-size: 0.75rem;
     --text-size: 0.85rem;
     --regular-text-size: 1rem;
-    --title-size: 3.5em;
-    --subtitle-size: 1.5rem;
+    --title-size: 3.25em;
+    --subtitle-size: 1.15rem;
     --small-title-size: 3rem;
   }
 
@@ -709,6 +754,27 @@ footer .hs3-logo {
   }
   section.about {
     flex-direction: column;
+    padding: 5%;
+  }
+  .mission {
+    flex-basis: auto;
+    line-height: 1.5;
+    margin: 0 auto;
+  }
+  .mission__list {
+    padding: 1.5rem 2.5rem;
+  }
+  .mission__list:last-child {
+    margin-left: 0;
+  }
+  .mission__list:first-child {
+    margin-right: 0;
+  }
+  .color-text {
+    font-size: 1.5rem;
+  }
+  .lead-info > .color-text {
+    font-size: 1.5rem;
   }
   .hero-img img {
     max-width: 250px;
@@ -727,15 +793,20 @@ footer .hs3-logo {
     width: 100%;
   }
   .schedule li {
-    display: flex;
-    flex-direction: column;
-    margin: 0.75rem 0;
+    margin: 0.75rem 0.25rem;
+    grid-template-columns: 3rem 1fr;
   }
+  .schedule li::before {
+    margin-right: 1.5rem;
+    width: 3rem;
+    height: 5rem;
+  }
+
   .schedule__info {
     margin-left: 0;
   }
   .schedule li::before {
-    justify-content: center;
+    justify-content: left;
     /* width: 100%; */
     margin-right: 0;
     margin: 0 auto;
