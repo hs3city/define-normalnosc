@@ -59,26 +59,6 @@ body::-webkit-scrollbar-thumb {
   height: 190px;
 }
 
-@supports (
-  scrollbar-color:
-    linear-gradient(
-      var(--secondary-accent-color),
-      var(--primary-accent-color),
-      var(--dark-purple-color)
-    )
-    hsl(0, 1%, 95%)
-) {
-  * {
-    scrollbar-color: linear-gradient(
-        var(--secondary-accent-color),
-        var(--primary-accent-color),
-        var(--dark-purple-color)
-      )
-      hsl(0, 1%, 95%);
-    scrollbar-width: auto;
-  }
-}
-
 body {
   font-size: var(--regular-text-size);
   font-family: var(--font-main);
