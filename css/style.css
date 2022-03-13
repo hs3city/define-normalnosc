@@ -576,11 +576,11 @@ article.speaker {
   font-size: var(--regular-text-size);
   max-width: 1100px;
   display: grid;
-  grid-template-columns: 10rem 1fr;
+  grid-template-columns: 10rem 30% 1fr;
   grid-template-rows: repeat(2, auto);
   grid-template-areas:
-    'img about'
-    '. text';
+    'img about s-m'
+    '. text text';
   border-bottom-style: solid;
   border-bottom-width: 13px;
   border-image: radial-gradient(
@@ -611,9 +611,18 @@ article.speaker {
   grid-column: 2/3;
   grid-row: 1/2;
 }
+.single-about > .subtitle {
+  width: fit-content;
+}
+.speaker-socials {
+  grid-area: s-m;
+  grid-column: 3 /4;
+  grid-row: 1/2;
+  padding: 2rem 5%;
+}
 .single-text {
   grid-area: text;
-  grid-column: 2/3;
+  grid-column: 2/4;
   grid-row: 2/3;
   padding: 0.5rem;
   line-height: 1.5;
@@ -777,13 +786,13 @@ footer .hs3-logo {
   .single {
     width: max-content;
   }
-  .single-speaker {
-    display: grid;
-    grid-template-columns: 10rem 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas:
-      'img about'
-      '. text';
+  .speaker-socials {
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .speaker-socials > .sm-logo {
+    padding: 0.45rem;
   }
 }
 
@@ -870,6 +879,12 @@ footer .hs3-logo {
     width: fit-content;
     margin-left: 1rem;
   }
+  .single-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .img-wrapper img {
     max-width: 120px;
     max-height: 120px;
@@ -877,5 +892,9 @@ footer .hs3-logo {
   .single-speaker {
     display: flex;
     flex-direction: column;
+  }
+
+  .single-text {
+    margin-top: 1rem;
   }
 }
