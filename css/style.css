@@ -698,8 +698,8 @@ article.speaker {
 }
 .logo-next img {
   width: 75%;
-  height: auto;
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain;
 }
 
 /* footer */
